@@ -1,0 +1,112 @@
+.nav {
+    align-items: center;
+    background: var(--bg);
+    border-top: 3px solid #7529c5;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.logoCtr,
+.linkCtr {
+    align-items: center;
+    display: flex;
+    justify-content: safe center;
+}
+
+.linkCtr {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+}
+
+.orgName {
+    color: var(--color-highlight);
+}
+
+.menuContainer {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .linkCtr {
+        background: var(--bg);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        left: 0;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+
+    .menuContainer {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        z-index: 10;
+    }
+
+    .toggled {
+        background: var(--bg);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+    }
+
+    .toggled {
+        animation: slideIn 500ms ease-in-out;
+        width: 100vw;
+    }
+
+    .untoggled {
+        animation: slideOut 500ms ease-in-out;
+        width: 0;
+    }
+
+    .menuLines {
+        background: var(--accent-purple);
+        border-radius: 500px;
+        height: 6px;
+        width: 35px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .links {
+        display: none;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100vw;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        width: 100vw;
+    }
+
+    100% {
+        width: 0;
+    }
+}

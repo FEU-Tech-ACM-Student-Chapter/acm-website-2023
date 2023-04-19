@@ -20,7 +20,7 @@ const withPWA = require("next-pwa")({
 		audio: "",
 		video: "",
 	},
-	buildExcludes: [/middleware-manifest.json$/],
+	buildExcludes: [/manifest.webmanifest$/],
 	skipWaiting: true,
 	scope: "/",
 	sw: "service-worker.js",
