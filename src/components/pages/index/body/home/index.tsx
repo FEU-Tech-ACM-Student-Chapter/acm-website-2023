@@ -42,8 +42,8 @@ const Home: React.FC = () => {
 				<GenImage
 					props={{
 						src: "/branding/home-asset.png",
-						height: 400,
-						width: 400,
+						height: 500,
+						width: 500,
 						alt: "home",
 					}}
 				></GenImage>

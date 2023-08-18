@@ -3,7 +3,6 @@
     grid-template-columns: 1fr auto;
     gap: 2rem;
     height: 100vh;
-    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -12,10 +11,15 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    width: 95%;
+        margin: auto;
     justify-content: center;
     align-items: center;
+    animation: slideInLeft 1s ease-in-out;
 }
-
+.homeImg {
+    animation: slideInRight 1s ease-in-out;
+}
 .title {
     font-size: 2rem;
 }
@@ -33,10 +37,29 @@
         background-repeat: no-repeat;
         background-size: cover;
         /* reduce visibility */
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: black;
     }
 
     .homeImg {
         display: none;
+    }
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
     }
 }

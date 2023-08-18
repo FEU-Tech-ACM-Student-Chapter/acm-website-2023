@@ -39,8 +39,7 @@ For questions, contact the Creative Director: John Felix Agda
 }
 
 ::-moz-selection,
-::selection,
-::target-text {
+::selection {
 	background: var(--accent-purple);
 	color: var(--color);
 }

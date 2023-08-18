@@ -22,7 +22,8 @@
     overflow-x: auto;
 }
 .linkCtr a {
-    padding: 1rem;
+    padding: 0 1rem;
+    width: 100%;
     text-align: center;
 }
 
@@ -38,6 +39,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .linkCtr a {
+        padding: 1rem 0;
+    }
     .linkCtr {
         background: var(--bg-black);
         display: flex;
