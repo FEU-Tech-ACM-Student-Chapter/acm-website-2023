@@ -34,6 +34,13 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Use when you want to untrack existing files in .gitignore
+# Refer: https://stackoverflow.com/questions/45400361/why-is-gitignore-not-ignoring-my-files
+
+# `git rm -r --cached .`
+# `git add .`
+# `git commit -m "refactor: untrack files in .gitignore"`
+
 # PWA files
 **/public/workbox-*.js
 **/public/sw.js
@@ -47,10 +54,11 @@ next-env.d.ts
 **/public/worker-*.js.map
 
 # partytown
-**/public/~partytown/*
+/public/~partytown/debug/*.js
+/public/~partytown/*.js
 
 # rest client
 .rest
 
 #unlighthouse
-.unlighthouse
+.unlighthousenew.txt
