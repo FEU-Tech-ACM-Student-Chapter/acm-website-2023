@@ -1,0 +1,10 @@
+.ctr {
+    width: 95vw;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .ctr {
+        width: 100vw;
+    }
+}

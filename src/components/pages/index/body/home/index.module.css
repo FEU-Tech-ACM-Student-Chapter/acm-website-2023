@@ -1,5 +1,41 @@
+.home {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
 .quote {
-    font-size: 1.5rem;
-    margin: 0 0 1.5rem;
-    text-align: center;
+    font-size: 2rem;
+}
+
+.homeBtn {
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        grid-template-columns: 1fr;
+        background-image: url("/branding/home-asset.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* reduce visibility */
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .homeImg {
+        display: none;
+    }
 }

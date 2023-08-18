@@ -17,6 +17,12 @@ For questions, contact the Creative Director: John Felix Agda
 	--color-heading: var(--retro-orange);
 	--color-subheading: var(--retro-yellow);
 
+	--bs-down: 0px 4px 8px 0px var(--accent-purple);
+	--bs-top: 0px -4px 8px 0px var(--accent-purple);
+	--bs-left: -4px 0px 8px 0px var(--accent-purple);
+	--bs-right: 4px 0px 8px 0px var(--accent-purple);
+	--bs-full: 0px 0px 8px 0px var(--accent-purple);
+
 	--bg: var(--retro-black);
 	--accent-purple: var(--retro-purple);
 	--alpha-purple: #7529c566;
@@ -126,6 +132,14 @@ img {
 	border: 2px solid var(--color);
 	padding: 0.5rem 1rem;
 	border-radius: 0.2rem;
+}
+
+.btnWhite:is(:hover, :focus) {
+	/* background: var(--color);
+	color: var(--bg); */
+	/* make it glow */
+	box-shadow: 0 0 0 0.2rem var(--color);
+	/* text too */
 }
 
 .btnWhite:is(:hover, :focus) {
