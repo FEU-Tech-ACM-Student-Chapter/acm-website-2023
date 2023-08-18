@@ -1,5 +1,5 @@
 import { createContext, ReactNode, useState } from "react";
-import { IContextIndex } from "./type";
+import IContextIndex from "./type";
 const ContextIndex = createContext<IContextIndex>({} as IContextIndex);
 export default ContextIndex;
 

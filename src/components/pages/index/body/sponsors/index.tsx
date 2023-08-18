@@ -1,4 +1,3 @@
-import GenButton from "@/components/gen/button";
 const Sponsors: React.FC = () => {
 	return (
 		<section id="sponsors">

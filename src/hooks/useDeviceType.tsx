@@ -1,10 +1,10 @@
-import { IContextGlobal } from "@/pages/context/_global/type";
+import IContextGlobal from "@/utils/context/_global/type";
 import { useState } from "react";
 // Design Pattern: Factory
 const useDeviceType = () => {
 	const getDeviceType = (
 		handheld: IContextGlobal["device"]["type"],
-		desktop: IContextGlobal["device"]["type"]
+		desktop: IContextGlobal["device"]["type"],
 	): IContextGlobal["device"] => {
 		return {
 			type: window.innerWidth <= 768 ? handheld : desktop,

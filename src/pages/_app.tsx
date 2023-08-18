@@ -7,7 +7,7 @@ import { Montserrat } from "next/font/google";
 import Head from "next/head";
 import NextNProgress from "nextjs-progressbar";
 import { ReactElement, ReactNode } from "react";
-import { ContextProviderGlobal } from "./context/_global";
+import { ContextProviderGlobal } from "../utils/context/_global";
 const fonts = Montserrat({ subsets: ["latin"] });
 export type NextPageWithLayout<P = Record<string, never>, IP = P> = NextPage<
 	P,

@@ -1,7 +1,7 @@
 import GenButton from "@/components/gen/button";
 import GenImage from "@/components/gen/image";
 import GenLink, { LinkProps } from "@/components/gen/link";
-import ContextIndex from "@/pages/context/index";
+import ContextIndex from "@/utils/context/index/index";
 import { useContext } from "react";
 import styles from "./index.module.css";
 const links: LinkProps["props"][] = [
