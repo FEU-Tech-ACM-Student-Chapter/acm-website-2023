@@ -1,11 +1,10 @@
-import styles from "./index.module.css";
 import Home from "./home";
-import Apply from "./apply";
+import styles from "./index.module.css";
 const Body: React.FC = () => {
 	return (
 		<section className={styles.ctr}>
 			<Home />
-			<Apply />
+			{/* <Apply /> */}
 		</section>
 	);
 };

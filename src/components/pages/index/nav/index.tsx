@@ -34,13 +34,19 @@ const Nav: React.FC = () => {
 				<GenImage
 					props={{
 						src: "/logo/feuacm.png",
-						height: 50,
+						height: 52,
 						width: 100,
 						alt: "logo",
 					}}
 				></GenImage>
 
-				<h1 className={styles.orgName}>FEU&nbsp;Tech&nbsp;ACM</h1>
+				<h1 className={styles.orgName}>
+					<GenLink
+						props={links[0]}
+					>
+						FEU&nbsp;Tech&nbsp;ACM
+					</GenLink>
+				</h1>
 			</span>
 			<span
 				className={`${styles.linkCtr} ${

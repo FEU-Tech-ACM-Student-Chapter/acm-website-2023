@@ -9,7 +9,7 @@ const IndexPage: NextPageWithLayout = () => {
 		<section className={styles.ctr}>
 			<Nav />
 			<Body />
-			<Footer />
+			{/* <Footer /> */}
 		</section>
 	);
 };

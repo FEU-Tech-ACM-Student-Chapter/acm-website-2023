@@ -1,7 +1,7 @@
 .nav {
     align-items: center;
-    background: var(--bg);
-    border-top: 3px solid #7529c5;
+    background: var(--bg-black);
+        border-top: 3px solid var(--accent-purple);
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
@@ -19,21 +19,27 @@
 
 .linkCtr {
     display: flex;
-    gap: 1rem;
     overflow-x: auto;
+}
+.linkCtr a {
+    padding: 1rem;
+    text-align: center;
 }
 
 .orgName {
     color: var(--color-highlight);
+    transition: var(--tr);
 }
-
+.orgName:where(:hover, :focus) {
+    text-shadow: 0 0 1rem var(--retro-orange);
+}
 .menuContainer {
     display: none;
 }
 
 @media screen and (max-width: 768px) {
     .linkCtr {
-        background: var(--bg);
+        background: var(--bg-black);
         display: flex;
         flex-direction: column;
         height: 100vh;
@@ -54,7 +60,7 @@
     }
 
     .toggled {
-        background: var(--bg);
+        background: var(--bg-black);
         display: flex;
         flex-direction: column;
         height: 100vh;
@@ -62,16 +68,14 @@
         left: 0;
         position: fixed;
         top: 0;
-        width: 100vw;
+        width: 100%;
     }
 
     .toggled {
-        animation: slideIn 500ms ease-in-out;
-        width: 100vw;
+        width: 100%;
     }
 
     .untoggled {
-        animation: slideOut 500ms ease-in-out;
         width: 0;
     }
 
@@ -87,25 +91,5 @@
 @media screen and (max-width: 480px) {
     .links {
         display: none;
-    }
-}
-
-@keyframes slideIn {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 100vw;
-    }
-}
-
-@keyframes slideOut {
-    0% {
-        width: 100vw;
-    }
-
-    100% {
-        width: 0;
     }
 }

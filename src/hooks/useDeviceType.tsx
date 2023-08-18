@@ -1,5 +1,6 @@
 import { IContextGlobal } from "@/pages/context/_global/type";
 import { useState } from "react";
+// Design Pattern: Factory
 const useDeviceType = () => {
 	const getDeviceType = (
 		handheld: IContextGlobal["device"]["type"],

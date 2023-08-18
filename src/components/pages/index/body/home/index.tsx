@@ -5,9 +5,9 @@ const Home: React.FC = () => {
 	return (
 		<div id="home" className={styles.home}>
 			<div className={styles.homeContent}>
-				<h1 className={styles.quote}>
-					Connecting minds <br />
-					Building Futures
+				<h1 className={styles.title}>
+					Connecting Minds,
+					Building&nbsp;Futures
 				</h1>
 				<p>
 					FEU Tech ACM Student Chapter is an organization operating exclusively

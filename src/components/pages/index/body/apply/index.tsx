@@ -3,7 +3,7 @@ const Apply: React.FC = () => {
 	return (
 		<section id="apply">
 			<h2>
-				Time to join a community of creators, <br />
+				Time to join a community of creators,
 				programmers and innovators
 			</h2>
 			<GenButton

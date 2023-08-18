@@ -26,6 +26,8 @@ function MyApp(props: AppPropsWithLayout & AppProps) {
 		pageProps: { ...pageProps },
 	} = props;
 	const getLayout = Component.getLayout ?? ((page) => page);
+	const colorBlack = "#090909";
+	const colorViolet = "#7529c5";
 	return (
 		<>
 			<Head>
@@ -40,11 +42,11 @@ function MyApp(props: AppPropsWithLayout & AppProps) {
 					name="abstract"
 					content="FEU Tech ACM Student Chapter is an organization operating exclusively for educational and scientific purposes in order to promote to increased knowledge and greater interest in science, design, development, construction, languages, management and applications; and as a means of communication between persons having an interest in computing."
 				/>
-				<meta name="author" content="Alpha Romer Coma, alphacoma18@gmail.com" />
-				<meta name="reply-to" content="alphacoma18@gmail.com" />
-				<meta name="designer" content="Alpha Romer Coma" />
+				<meta name="author" content="FEU Tech ACM, acm.feu.it@gmail.com" />
+				<meta name="reply-to" content="acm.feu.it@gmail.com" />
+				<meta name="designer" content="Jester Sean Caspillo" />
 				<meta name="publisher" content="Alpha Romer Coma" />
-				<meta name="owner" content="Alpha Romer Coma" />
+				<meta name="owner" content="FEU Tech ACM" />
 				<meta name="target" content="all" />
 				<meta name="copyright" content="Alpha Romer Coma" />
 				<meta
@@ -125,14 +127,14 @@ function MyApp(props: AppPropsWithLayout & AppProps) {
 				<meta name="apple-mobile-web-app-capable" content="yes" />
 				<meta name="apple-mobile-web-app-title" content="FEU Tech ACM" />
 				<meta name="apple-touch-fullscreen" content="yes" />
-				<meta name="apple-mobile-web-app-status-bar-style" content="#090909" />
+				<meta name="apple-mobile-web-app-status-bar-style" content={colorBlack} />
 				<meta name="application-name" content="FEU Tech ACM" />
-				<meta name="msapplication-TileColor" content="#090909" />
-				<meta name="msapplication-navbutton-color" content="#090909" />
+				<meta name="msapplication-TileColor" content={colorBlack} />
+				<meta name="msapplication-navbutton-color" content={colorBlack} />
 				<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
 				<meta name="msapplication-config" content="/browserconfig.xml" />
 				<meta name="msapplication-tap-highlight" content="no" />
-				<meta name="theme-color" content="#090909" />
+				<meta name="theme-color" content={colorBlack} />
 				<meta name="format-detection" content="telephone=no" />
 
 				<link
@@ -164,7 +166,7 @@ function MyApp(props: AppPropsWithLayout & AppProps) {
 					sizes="16x16"
 					href="/favicon-16x16.png"
 				/>
-				<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#090909" />
+				<link rel="mask-icon" href="/safari-pinned-tab.svg" color={colorBlack} />
 				<link rel="manifest" href="/manifest.webmanifest" />
 				<meta
 					name="viewport"
@@ -175,7 +177,7 @@ function MyApp(props: AppPropsWithLayout & AppProps) {
 			{getLayout(
 				<ContextProviderGlobal>
 					<NextNProgress
-						color={"#7529c5"}
+						color={colorViolet}
 						transformCSS={(css) => {
 							return (
 								<style>{css.replace("top: 15px;", "bottom: 15px;")}</style>
@@ -186,7 +188,7 @@ function MyApp(props: AppPropsWithLayout & AppProps) {
 						<Component {...pageProps} />
 						<Analytics />
 					</main>
-				</ContextProviderGlobal>
+				</ContextProviderGlobal>,
 			)}
 		</>
 	);

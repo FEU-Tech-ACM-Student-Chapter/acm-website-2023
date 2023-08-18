@@ -18,7 +18,7 @@ const GenImage: React.FC<IImage> = ({ props }) => {
 			width={width}
 			title={alt}
 			alt={alt}
-			// className={className}
+			className={className}
 			// style={{
 			// 	display: "inline-flex",
 			// 	justifyContent: "center",
