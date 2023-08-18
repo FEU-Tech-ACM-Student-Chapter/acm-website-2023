@@ -51,7 +51,7 @@
 	],
 	"theme_color": "#090909",
 	"background_color": "#090909",
-	"start_url": "http://localhost:3000",
+	"start_url": "https://fit-acm.vercel.app",
 	"display": "standalone",
 	"scope": "/",
 	"dir": "ltr",

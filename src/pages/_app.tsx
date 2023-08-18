@@ -37,7 +37,7 @@ function MyApp(props: AppPropsWithLayout & AppProps) {
 					name="description"
 					content="FEU Tech ACM Student Chapter is an organization operating exclusively for educational and scientific purposes in order to promote to increased knowledge and greater interest in science, design, development, construction, languages, management and applications; and as a means of communication between persons having an interest in computing."
 				/>
-				<meta name="url" content="http://localhost:3000" />
+				<meta name="url" content="https://fit-acm.vercel.app" />
 				<meta
 					name="abstract"
 					content="FEU Tech ACM Student Chapter is an organization operating exclusively for educational and scientific purposes in order to promote to increased knowledge and greater interest in science, design, development, construction, languages, management and applications; and as a means of communication between persons having an interest in computing."
@@ -76,7 +76,7 @@ function MyApp(props: AppPropsWithLayout & AppProps) {
 					property="og:description"
 					content="FEU Tech ACM Student Chapter is an organization operating exclusively for educational and scientific purposes in order to promote to increased knowledge and greater interest in science, design, development, construction, languages, management and applications; and as a means of communication between persons having an interest in computing."
 				/>
-				<meta property="og:url" content="http://localhost:3000" />
+				<meta property="og:url" content="https://fit-acm.vercel.app" />
 				<meta property="og:site_name" content="FEU Tech ACM" />
 				<meta property="og:type" content="website" />
 				<meta property="og:image" content="/logo/og_image.png" />
@@ -96,7 +96,7 @@ function MyApp(props: AppPropsWithLayout & AppProps) {
 					property="twitter:description"
 					content="FEU Tech ACM Student Chapter is an organization operating exclusively for educational and scientific purposes in order to promote to increased knowledge and greater interest in science, design, development, construction, languages, management and applications; and as a means of communication between persons having an interest in computing."
 				/>
-				<meta property="twitter:url" content="http://localhost:3000" />
+				<meta property="twitter:url" content="https://fit-acm.vercel.app" />
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:app:country" content="EN" />
 				<meta name="twitter:image" content="/logo/og_image.png" />
@@ -106,7 +106,7 @@ function MyApp(props: AppPropsWithLayout & AppProps) {
 				<meta name="twitter:image:height" content="630" />
 				<meta name="twitter:site" content="@senodesuzo" />
 				<meta name="twitter:creator" content="@senodesuzo" />
-				<link rel="canonical" href="http://localhost:3000" />
+				<link rel="canonical" href="https://fit-acm.vercel.app" />
 
 				{/* Icons and browser stuff */}
 
